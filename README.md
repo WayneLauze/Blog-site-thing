@@ -9,16 +9,17 @@
 
 a What? 
        
-        Single-page-application, with core being around posts made by registered users, 
-        shown fully or partly depending on the page viewed. 
+        Single-page-application, with its core being around posts made  
+        by registered users, posts are shown fully or partly depending  
+        on the page viewed.
 
         Users are saved with hashed passwords to database, 
-        logins have with sessions stored in database. 
+        logins are managed with sessions stored an to database. 
 
         Created posts contain only text for now, 
         will include other media in the future. 
 
-        Its not live, its not finished, not ready, but its something. 
+        Its not yet live, its not finished, not ready, but its something. 
         Work in progress. 
 
 but Why?
