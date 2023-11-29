@@ -44,9 +44,12 @@ and How?
       - App.js
                 Frame for other functions to take place in. Defines Navbar shown at all times.
                 Handles logout, defines routes to other functions within the application.
-                Is defines appcontent within which usercontexts is provided, to activate 
-                properiate functionality for user.  
+                
+                It defines 'appcontent' within which 'usercontexts' is provided, to activate 
+                aproperiate functionality for user in question.  
 
+                Meaning 'if logged in: show stuff that is only for logged in users'    
+                        
         ------------------------------------------------------------------------------
 
       - home.js  
