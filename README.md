@@ -158,7 +158,7 @@ and How?
 
      - MongoDB is used. Database has three collections: users, sessions and posts 
 
-     - a single **post** -document in collection of posts contains the information: 
+     - a single post -document in collection of posts contains the information: 
                         
                           _id :          (index given by platform)
                         title :          topic title shown to user. 
