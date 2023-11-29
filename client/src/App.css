@@ -1,0 +1,108 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.homepost {
+  background-color: #121212; /* slightly darker than the current background */
+  border-radius: 10px; /* rounded corners */
+  padding: 20px; /* some padding */
+  margin-bottom: 10px; /* some margin to separate the posts */
+  color: #fff; /* white text color */
+  opacity: 0;
+  max-height: 0;
+  transition: max-height 0.5s ease-in-out,  opacity 0.3s ease-in-out;
+  overflow: hidden;
+}
+
+.homepost.loaded {
+  max-height: 2000px; /* adjust this value as needed */
+  opacity: 100;
+}
+
+
+.post {
+  background-color: #121212; /* slightly darker than the current background */
+  border-radius: 10px; /* rounded corners */
+  padding: 20px; /* some padding */
+  margin-bottom: 10px; /* some margin to separate the posts */
+  color: #fff; /* white text color */
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out
+}
+
+.fade-in {
+  background-color: #121212; /* slightly darker than the current background */
+  border-radius: 10px; /* rounded corners */
+  padding: 20px; /* some padding */
+  margin-bottom: 10px; /* some margin to separate the posts */
+  color: #fff; /* white text color */
+  opacity: 0;
+  animation: fadeIn .5s ease-in forwards;
+  animation-delay: 0.6s; /* adjust this value as needed */
+}
+
+.posts-pohja {
+  background-color: #121212; /* slightly darker than the current background */
+  border-radius: 10px; /* rounded corners */
+  padding: 20px; /* some padding */
+  margin-bottom: 10px; /* some margin to separate the posts */
+  color: #fff; /* white text color */
+  opacity: 0;
+  animation-delay: 2s; /* adjust this value as needed */
+  animation: fadeIn .5s ease-in forwards, max-height 0.5s ease-in-out;
+  
+}
+
+
+
+
+.home-screen-animation {
+  opacity: 0;
+  transform: translateY(-100%);
+  animation: fadeInAndStretch 1s ease-in-out forwards;
+}
+
+.post-content {
+  background-color: #121212; /* slightly darker than the current background */
+  border-radius: 10px; /* rounded corners */
+  padding: 20px; /* some padding */
+  margin-bottom: 10px; /* some margin to separate the posts */
+  color: #fff; /* white text color */
+  max-height: 0;
+  transition: max-height 0.5s ease-in-out;
+  overflow: hidden;
+}
+
+.post-content.loaded {
+  max-height: 2000px; /* adjust this value as needed */
+}
+
+
+
+
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: rgb(57, 57, 57);
+}
+
+.App-link {
+  color: #172e35;
+}
+
+
