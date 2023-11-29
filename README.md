@@ -124,7 +124,7 @@ and How?
 
       - user.js 
                 Defines user scheme, attributes and data of an registered user.
-                contains also hashing function for password, plain is not saved.
+                contains also hashing function for password, plain password is not saved.
 
         ------------------------------------------------------------------------------
 
