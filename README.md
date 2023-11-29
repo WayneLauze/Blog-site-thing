@@ -66,7 +66,7 @@ and How?
 
       - posts.js 
                 
-                posts works as a frame for functions postlists.js and postfetcher.js to: 
+                posts.js works as a frame for functions postlists.js and postfetcher.js to: 
 
                 1) display list of titles in order of oldest to newest (postlists.js)
                 2) to display the selected post with all its content. (postfetcher.js) 
