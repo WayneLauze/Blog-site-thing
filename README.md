@@ -25,8 +25,8 @@ a What?
 but Why?
         
         Mainly to learn code, usage of React, Node.js and MongoDB, as well as  
-        to show something I have created, as well as to create 
-        a simple and flexible blog site for other usecases. 
+        to show something I have created, AND to create 
+        a simple and flexible blog site for other usecases in the future. 
           
 and How?
         
