@@ -224,8 +224,12 @@ and How?
 
       > npm start 
       
-        in two separate terminals, one for client and one for server. 
+        in two separate terminals: 
+        one in blog-site-thing/client 
+        to run the frontend
 
+        and one for server in blog-site-thing/server 
+        to run the backend
         ------------------------------------------------------------------------------
 
 
