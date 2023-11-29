@@ -30,7 +30,7 @@ but Why?
           
 and How?
         
-        With frustration, reading and excess help and explanation of component functions 
+        With frustration, reading and excess help and endless explanations of functions, 
         from GitHub co-pilot, as well as tutorials and other recoureses on the web.
          
 
