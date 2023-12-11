@@ -1,48 +1,55 @@
-    Wayne's
-                Blog-site-thing
-                                   v0.7 
-                                                                                
+            Wayne's  _     _                       _ _             _   _     _             
+                    | |__ | | ___   __ _       ___(_) |_ ___      | |_| |__ (_)_ __   __ _ 
+                    | '_ \| |/ _ \ / _` |_____/ __| | __/ _ \_____| __| '_ \| | '_ \ / _` |
+                    | |_) | | (_) | (_| |_____\__ \ | ||  __/_____| |_| | | | | | | | (_| |
+                    |_.__/|_|\___/ \__, |     |___/_|\__\___|      \__|_| |_|_|_| |_|\__, |
+                                   |___/                                             |___/ v.0.7 
+                                                                                    
 
 
 a What? 
        
-        Single-page-application, with core being around posts made by registered users, 
-        shown fully or partly depending on the page viewed. 
+        Single-page-application, with its core being around posts made  
+        by registered users, posts are shown fully or partly depending  
+        on the page viewed.
 
         Users are saved with hashed passwords to database, 
-        logins have with sessions stored in database. 
+        logins are managed with sessions stored an to database. 
 
         Created posts contain only text for now, 
         will include other media in the future. 
 
-        Its not live, its not finished, not ready, but its something. 
+        Its not yet live, its not finished, not ready, but its something. 
         Work in progress. 
 
 but Why?
         
         Mainly to learn code, usage of React, Node.js and MongoDB, as well as  
-        to show something I have created, as well as to create 
-        a simple and flexible blog site for other usecases. 
+        to show something I have created, AND to create 
+        a simple and flexible blog site for other usecases in the future. 
           
 and How?
         
-        With frustration, reading and excess help and explanation of component functions 
+        With frustration, reading and excess help and endless explanations of functions, 
         from GitHub co-pilot, as well as tutorials and other recoureses on the web.
          
 
 
 
 
---- Frontend 
+--- Frontend ---
 
     -- Components
 
       - App.js
                 Frame for other functions to take place in. Defines Navbar shown at all times.
                 Handles logout, defines routes to other functions within the application.
-                Is defines appcontent within which usercontexts is provided, to activate 
-                properiate functionality for user.  
+                
+                It defines 'appcontent' within which 'usercontexts' is provided, to activate 
+                aproperiate functionality for user in question.  
 
+                Meaning 'if logged in: show stuff that is only for logged in users'    
+                        
         ------------------------------------------------------------------------------
 
       - home.js  
@@ -59,7 +66,7 @@ and How?
 
       - posts.js 
                 
-                posts works as a frame for functions postlists.js and postfetcher.js to: 
+                posts.js works as a frame for functions postlists.js and postfetcher.js to: 
 
                 1) display list of titles in order of oldest to newest (postlists.js)
                 2) to display the selected post with all its content. (postfetcher.js) 
@@ -110,7 +117,7 @@ and How?
         ------------------------------------------------------------------------------
 
 
---- Backend   
+--- Backend ---  
 
     -- Models 
 
@@ -120,7 +127,7 @@ and How?
 
       - user.js 
                 Defines user scheme, attributes and data of an registered user.
-                contains also hashing function for password, plain is not saved.
+                contains also hashing function for password, plain password is not saved.
 
         ------------------------------------------------------------------------------
 
@@ -154,7 +161,7 @@ and How?
 
      - MongoDB is used. Database has three collections: users, sessions and posts 
 
-     - a single **post** -document in collection of posts contains the information: 
+     - a single post -document in collection of posts contains the information: 
                         
                           _id :          (index given by platform)
                         title :          topic title shown to user. 
@@ -220,8 +227,12 @@ and How?
 
       > npm start 
       
-        in two separate terminals, one for client and one for server. 
+        in two separate terminals: 
+        one in blog-site-thing/client 
+        to run the frontend
 
+        and one for server in blog-site-thing/server 
+        to run the backend
         ------------------------------------------------------------------------------
 
 
