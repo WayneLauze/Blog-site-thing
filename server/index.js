@@ -81,7 +81,7 @@ app.use(async (req, res, next) => {
 //Login 
   //comparing the hashed version of the input password with the stored hash.
     //määritellään polku, joka ottaa vastaan käyttäjänimen ja salasanan
-    app.post('/auth/login', async (req, res) => {
+    app.post('/auth/login', requireLogin, async (req, res) => {
       const { username, password } = req.body;
      
       
@@ -206,6 +206,14 @@ app.post('/auth/logout', (req, res) => {
     }
     res.json({ message: 'Logged out' });
   });
+});
+
+app.get('/auth/check', (req, res) => {
+  if (req.session.userId) {
+    res.json({ loggedIn: true });
+  } else {
+    res.json({ loggedIn: false });
+  }
 });
 
 

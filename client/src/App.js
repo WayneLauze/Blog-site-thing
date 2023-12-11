@@ -20,6 +20,12 @@ function NavBar() {
     const { user, setUser } = useContext(UserContext);
     const navigate = useNavigate();
     
+
+
+ 
+
+
+
     
   // handle logout
     function logOut() {
@@ -39,6 +45,9 @@ function NavBar() {
       .catch(error => console.error('Error:', error));
     }
 
+
+
+    
   // display the navigation bar
     return (
         <nav style={{ margin: 10 }}>

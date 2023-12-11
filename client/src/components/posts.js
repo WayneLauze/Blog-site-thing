@@ -6,7 +6,7 @@ import { Outlet } from 'react-router-dom';
 function Posts() {
 
     return (
-      <div style={{ padding: 20 }}>
+      <div className="fade-in" style={{ padding: 20 }}>
         
         <h2>Posts</h2>
         <Outlet />
