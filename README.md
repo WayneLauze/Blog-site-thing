@@ -236,6 +236,7 @@ and How?
         ------------------------------------------------------------------------------
 
 
+
 --- ToDo's:
 
     - set session checks at restricted pages
@@ -247,5 +248,10 @@ and How?
     - media storage for PDF
     - mockdata for test usage without database connection
 
-  
+  ------------------------------------------------------------------------------
 
+--- Changelogs: 
+  
+    - 0.7.0.1: 
+            - if session is destroyed, user is is unable delete/edit/create posts. 
+            - posts fadein animation 
