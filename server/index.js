@@ -27,7 +27,7 @@ const store = new MongoDBStore({
   uri: 'mongodb+srv://vainolausi:nE00ox6GnukLbjpz@cluster0.deydchl.mongodb.net/demo?retryWrites=true&w=majority', // replace with your MongoDB connection string
 
   collection: 'sessions',
-//   expires: 1000 * 60 * 60 * 2 // 2 hours , there is no checks for sessions yet
+  expires: 1000 * 60 * 60 * 2 // 2 hours , there is no checks for sessions yet
 });
 
 
