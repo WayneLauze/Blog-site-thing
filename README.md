@@ -254,4 +254,7 @@ and How?
   
     - 0.7.0.1: 
             - if session is destroyed, user is is unable delete/edit/create posts. 
-            - posts fadein animation 
+            
+    - 0.7.0.2: 
+            - Session timeouts set to 2 hours. 
+             
